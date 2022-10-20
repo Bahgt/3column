@@ -1,0 +1,230 @@
+
+:root {
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white :hsla(0, 0%, 100%, 0.75);
+--Very-light-gray : hsl(0, 0%, 95%);
+
+}
+
+
+
+
+
+body {
+
+background-color: var(--Very-light-gray);
+font-family: 'Lexend Deca', sans-serif;;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+border-radius: 6.5px;
+
+overflow: hidden;
+height: 475px;
+width: 853px;
+margin: 100px auto;
+}
+.box img {
+
+    
+        margin-left: 42px;
+        margin-top: 52px;
+        /* height: 10px; */
+  
+
+}
+.box h1 {
+color: var(--Very-light-gray);
+font-family: 'Big Shoulders Display', cursive;;
+
+	margin-left: 40px;
+	height: 35px;
+	margin-top: 24px;
+	font-weight: 700;
+	font-size: 42px;
+
+
+}
+.box p {
+    color: var(--Transparent-white);
+    
+  
+    width: 183px;
+    margin-left: 40px;
+    line-height: 2;
+    font-size: 13px;
+    height: 30px;
+    margin-top: 39px;
+}
+.box button {
+    background-color: var(--Very-light-gray);
+    border-radius: 5px;
+    
+}
+.box .btn {
+width: 127px;
+height: 42px;
+margin-left: 42px;
+justify-items: center;
+align-items: center;
+cursor: pointer;
+border-radius: 94px;
+margin-top: 162px;
+}
+.sedan .btn button {
+
+    padding: 15px 32px;
+    
+    background-color: var(--Very-light-gray);
+border: none;
+font-size: 12px;
+border-radius: 36px;
+width: 138px;
+font-weight: 415;
+font-family: 'Lexend Deca', sans-serif;
+color: var(--Bright-orange);
+
+    
+}
+.suv .btn button {
+
+    padding: 15px 32px;
+    
+    background-color: var(--Very-light-gray);
+border: none;
+font-size: 12px;
+border-radius: 36px;
+width: 138px;
+font-weight: 415;
+font-family: 'Lexend Deca', sans-serif;
+color: var(--Dark-cyan)
+
+    
+}
+.luxury .btn button {
+
+    padding: 15px 32px;
+    
+    background-color: var(--Very-light-gray);
+border: none;
+font-size: 12px;
+border-radius: 36px;
+width: 138px;
+font-weight: 415;
+font-family: 'Lexend Deca', sans-serif;
+color: var(--Very-dark-cyan)
+    
+}
+
+.sedan button:hover{
+    background: transparent;
+    color: antiquewhite;
+    border: 0.35px solid white;
+    cursor: pointer;
+    
+}
+.suv button:hover{
+    background: transparent;
+    color: antiquewhite;
+    border: 0.35px solid white;
+    cursor: pointer;
+    
+}
+.luxury button:hover{
+    background: transparent;
+    color: antiquewhite;
+    border: 0.35px solid white;
+    cursor: pointer;
+    
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+}
+
+.suv {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury  {
+background-color: var(--Very-dark-cyan);
+
+}
+
+
+
+
+@media (max-width:920px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+ 
+       width: 95%;
+    }
+    .box {
+        position: relative;
+      
+
+
+        padding-left: auto;
+        padding-right: auto;
+    }
+    button {
+
+        margin-left: -9px;
+        position: absolute;
+        bottom: 21px;
+    }
+    img {
+        position: absolute;
+        width: 350px;
+        left: 200px;
+    }
+
+
+}
+
+@media (max-width:672px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+ 
+       width: 95%;
+       gap: 0;
+    }
+    .box{
+        position: relative;
+    }
+
+    img{
+position: static;
+
+width: 90px;
+
+    }
+   
+    button {
+        position: absolute;
+ 
+}
+
+
+
+
+}
+.attribution{
+    text-align: center;
+    font-size: 10px;
+    color: rgb(109, 109, 86);
+    
+}
